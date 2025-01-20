@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yhteydenotto</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+<style>
+* {
+    box-sizing: border-box;
+}
+                
+body {
+    font-family: arial, Helvetica, sans-serif;
+}
+                
+article {
+    float: left;
+    padding: 20px;
+    width: 100%;
+    background-color: #E1F0E4;
+    height: 1100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('taustakuva.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+                
+footer {
+    background-color: white;
+    padding: 0px;
+    padding-left: 20px;
+    color: white;
+    text-align: left;
+    font-size: 15px;
+}
+
+p.big {
+  line-height: 4.0;
+}
+
+</style>
+</head>
+<title> Navigointivalikko </title>
+<link href="tyyli.css" rel="stylesheet">
+    <body>
+       <nav id="nav01"></nav>
+       <div id="main">
+           <footer id="foot01"></footer>
+        </div>
+        <script src="script.js"></script>
+    
+<article>
+    <h1>Yhteystiedot</h1>
+    <br></br>
+    <h4>Jenni Malinen</h4>
+    <h4>Puhelinnumero: 0443455293</h4>
+    <h4>Sähköposti: jennituuliamalinen@gmail.com</h4>
+    <h4><a href="https://www.osao.fi/">Opiskelen täällä.</a></h4>
+
+    <br></br>
+    <h1>Anna palautetta sivustosta</h1>
+    <form action="/action_page.php">
+        <fieldset>
+          <!-- Perustieto kysely -->
+          <label for="etunimi">Etunimi:</label><br>
+          <input type="text" id="etunimi" name="etunimi" value=""><br>
+          <label for="sukunimi">Sukunimi:</label><br>
+          <input type="text" id="sukunimi" name="sukunimi" value="">
+          <br><br>
+          <!-- Valinta ruutu -->
+          <p>Valitse sivustoa parhaiten kuvaava sana.</p>
+          <input list="browsers" name="arviointi">
+  <datalist id="browsers">
+    <option value="Huono">
+    <option value="Heikko">
+    <option value="Hyvä">
+    <option value="Täydellinen">
+  </datalist>
+          <br></br>
+          <!-- Tekstilaatikko -->
+          <p>Kirjoita palautteesi tähän.</p>
+          <textarea name="palaute" rows="10" cols="30"></textarea>
+          <br></br>
+          <input type="Submit" value="Lähetä">
+        </fieldset>
+      </form>
+</article>
+
+<footer>
+    <p class="big">
+    Sivu on päivitetty 20.1.2025.<br>
+    ©Jenni Malinen<br>
+    </p>
+</footer>
+
+</body>
+</html>
